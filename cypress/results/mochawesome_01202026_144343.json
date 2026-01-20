@@ -1,0 +1,110 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2026-01-20T17:43:38.471Z",
+    "end": "2026-01-20T17:43:43.455Z",
+    "duration": 4984,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "d2378485-217d-4ab6-ad6a-3676860ca3e9",
+      "title": "",
+      "fullFile": "cypress\\e2e\\api-profile.cy.js",
+      "file": "cypress\\e2e\\api-profile.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "ffa8bdf9-0c70-47c2-bdeb-822aaef00b92",
+          "title": "Testing profiles calls and loads",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Must have user name in response",
+              "fullTitle": "Testing profiles calls and loads Must have user name in response",
+              "timedOut": null,
+              "duration": 2741,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.intercept('POST', 'https://adopet-api-i8qu.onrender.com/adotante/perfil/a9c101ea-c0f4-41df-9350-485607a55399').should('include', 'Gustavo2');",
+              "err": {
+                "message": "AssertionError: object tested must be an array, a map, an object, a set, a string, or a weakset, but null given",
+                "estack": "AssertionError: object tested must be an array, a map, an object, a set, a string, or a weakset, but null given\n    at Context.eval (webpack://curso-cypress-alura/./cypress/e2e/api-profile.cy.js:10:122)",
+                "diff": null
+              },
+              "uuid": "edf643bb-4338-4d89-b779-a85d9c7d1cba",
+              "parentUUID": "ffa8bdf9-0c70-47c2-bdeb-822aaef00b92",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "edf643bb-4338-4d89-b779-a85d9c7d1cba"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 2741,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.4"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/results",
+        "overwrite": false,
+        "html": true,
+        "json": true,
+        "timestamp": "mmddyyyy_HHMMss"
+      },
+      "version": "6.3.2"
+    }
+  }
+}

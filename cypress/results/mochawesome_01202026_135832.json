@@ -1,0 +1,201 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 6,
+    "passes": 6,
+    "pending": 0,
+    "failures": 0,
+    "start": "2026-01-20T16:58:11.586Z",
+    "end": "2026-01-20T16:58:32.248Z",
+    "duration": 20662,
+    "testsRegistered": 6,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "08b507d9-89b6-45d4-a777-0eaf013409fa",
+      "title": "",
+      "fullFile": "cypress\\e2e\\mass-register.cy.js",
+      "file": "cypress\\e2e\\mass-register.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "f8b1879c-e2de-41b8-89f2-8397e78eb61e",
+          "title": "Resgister page with mass data",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Must fill the correct fields in register form to register a user",
+              "fullTitle": "Resgister page with mass data Must fill the correct fields in register form to register a user",
+              "timedOut": null,
+              "duration": 3513,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.register(usuario.name, usuario.email, usuario.password);",
+              "err": {},
+              "uuid": "7197a73c-105a-494d-af34-d0d86626c7e3",
+              "parentUUID": "f8b1879c-e2de-41b8-89f2-8397e78eb61e",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Must fill the correct fields in register form to register a user",
+              "fullTitle": "Resgister page with mass data Must fill the correct fields in register form to register a user",
+              "timedOut": null,
+              "duration": 2533,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.register(usuario.name, usuario.email, usuario.password);",
+              "err": {},
+              "uuid": "47e2433e-c6fd-49bf-9999-cb249adf29f8",
+              "parentUUID": "f8b1879c-e2de-41b8-89f2-8397e78eb61e",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Must fill the correct fields in register form to register a user",
+              "fullTitle": "Resgister page with mass data Must fill the correct fields in register form to register a user",
+              "timedOut": null,
+              "duration": 3271,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.register(usuario.name, usuario.email, usuario.password);",
+              "err": {},
+              "uuid": "3b559aab-8657-4391-a030-79009f2f795f",
+              "parentUUID": "f8b1879c-e2de-41b8-89f2-8397e78eb61e",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Must fill the correct fields in register form to register a user",
+              "fullTitle": "Resgister page with mass data Must fill the correct fields in register form to register a user",
+              "timedOut": null,
+              "duration": 2809,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.register(usuario.name, usuario.email, usuario.password);",
+              "err": {},
+              "uuid": "c0ddb8fd-c99f-4565-8b14-1f2060e37900",
+              "parentUUID": "f8b1879c-e2de-41b8-89f2-8397e78eb61e",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Must fill the correct fields in register form to register a user",
+              "fullTitle": "Resgister page with mass data Must fill the correct fields in register form to register a user",
+              "timedOut": null,
+              "duration": 3057,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.register(usuario.name, usuario.email, usuario.password);",
+              "err": {},
+              "uuid": "a5883045-2d6b-47b4-8d1c-848d70484135",
+              "parentUUID": "f8b1879c-e2de-41b8-89f2-8397e78eb61e",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Must fill the correct fields in register form to register a user",
+              "fullTitle": "Resgister page with mass data Must fill the correct fields in register form to register a user",
+              "timedOut": null,
+              "duration": 3103,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.register(usuario.name, usuario.email, usuario.password);",
+              "err": {},
+              "uuid": "c4318b69-a200-4fd6-85f2-7785a976e977",
+              "parentUUID": "f8b1879c-e2de-41b8-89f2-8397e78eb61e",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "7197a73c-105a-494d-af34-d0d86626c7e3",
+            "47e2433e-c6fd-49bf-9999-cb249adf29f8",
+            "3b559aab-8657-4391-a030-79009f2f795f",
+            "c0ddb8fd-c99f-4565-8b14-1f2060e37900",
+            "a5883045-2d6b-47b4-8d1c-848d70484135",
+            "c4318b69-a200-4fd6-85f2-7785a976e977"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 18286,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.4"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/results",
+        "overwrite": false,
+        "html": true,
+        "json": true,
+        "timestamp": "mmddyyyy_HHMMss"
+      },
+      "version": "6.3.2"
+    }
+  }
+}

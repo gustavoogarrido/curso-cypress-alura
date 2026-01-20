@@ -1,0 +1,110 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2026-01-20T18:44:59.964Z",
+    "end": "2026-01-20T18:45:05.671Z",
+    "duration": 5707,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "039696f4-a83a-462a-b1f1-3bedacc2c993",
+      "title": "",
+      "fullFile": "cypress\\e2e\\api-profile.cy.js",
+      "file": "cypress\\e2e\\api-profile.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "e754078b-5123-4133-a158-39c16db16946",
+          "title": "Testing profiles calls and loads",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Must have user name in response",
+              "fullTitle": "Testing profiles calls and loads Must have user name in response",
+              "timedOut": null,
+              "duration": 3521,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.request({\n  method: 'GET',\n  url: 'https://adopet-api-i8qu.onrender.com/adotante/perfil/a9c101ea-c0f4-41df-9350-485607a55399',\n  headers: {\n    authorization\n  }\n}).then(res => {\n  expect(res.status).to.be.equal(200);\n  expect(res.nome).is.not.empty;\n  expect(res.body).to.have.property('perfil');\n  expect(res.body.perfil.name).to.be.equal('Gsutavo2');\n});",
+              "err": {
+                "message": "AssertionError: .empty was passed non-string primitive undefined",
+                "estack": "AssertionError: .empty was passed non-string primitive undefined\n    at Context.eval (webpack://curso-cypress-alura/./cypress/e2e/api-profile.cy.js:16:12)",
+                "diff": null
+              },
+              "uuid": "8bf1c4d2-495a-4245-809a-ecd777b5942a",
+              "parentUUID": "e754078b-5123-4133-a158-39c16db16946",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "8bf1c4d2-495a-4245-809a-ecd777b5942a"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 3521,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.4"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/results",
+        "overwrite": false,
+        "html": true,
+        "json": true,
+        "timestamp": "mmddyyyy_HHMMss"
+      },
+      "version": "6.3.2"
+    }
+  }
+}
