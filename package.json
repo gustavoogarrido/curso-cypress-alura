@@ -21,6 +21,7 @@
   },
   "homepage": "https://github.com/gustavoogarrido/curso-cypress-alura#readme",
   "devDependencies": {
-    "cypress": "^13.6.4"
+    "cypress": "^13.6.4",
+    "mochawesome": "^7.1.4"
   }
 }

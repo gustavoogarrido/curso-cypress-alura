@@ -4,11 +4,7 @@ describe('Register function', () => {
     cy.get('[data-test="register-button"]').click();
   })
   it('Should register a new account successfully', () => {
-    cy.get('[data-test="input-name"]').type('Gustavo');
-    cy.get('[data-test="input-email"]').type('gustavo21@exemplo.com');
-    cy.get('[data-test="input-password"]').type('@Gustavo123');
-    cy.get('[data-test="input-confirm-password"]').type('@Gustavo123');
-    cy.get('[data-test="submit-button"]').click()
+    cy.register('Gustavo', 'gustavo21@exemplo.com', '@Gustavo123');
   })
 })
 
@@ -20,7 +16,7 @@ describe('Adoption list function', () => {
 })
 
 describe('Header buttons', () => {
-  it.skip('Should take to home and take to message form', () => {
+  it('Should take to home and take to message form', () => {
     //Login
     cy.visit('https://adopet-frontend-cypress.vercel.app/');
     cy.contains('a', 'Fazer login').click();
