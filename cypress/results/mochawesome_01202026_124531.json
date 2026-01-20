@@ -1,0 +1,106 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2026-01-20T15:45:25.607Z",
+    "end": "2026-01-20T15:45:31.049Z",
+    "duration": 5442,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "e3e9239c-c74f-4a00-9cd4-fef642cea63b",
+      "title": "",
+      "fullFile": "cypress\\e2e\\register-failure.cy.js",
+      "file": "cypress\\e2e\\register-failure.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "fb584d7e-273a-4ad0-9466-d049980cee78",
+          "title": "Should fail in registering",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Should fail when submit button pressed without filling \"email\", \"senha\" and \"confirmação de senha\" fields",
+              "fullTitle": "Should fail in registering Should fail when submit button pressed without filling \"email\", \"senha\" and \"confirmação de senha\" fields",
+              "timedOut": null,
+              "duration": 2744,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('[data-test=\"submit-button\"]').click();\ncy.contains('É necessário informar um endereço de email').should('be.visible');\ncy.contains('Crie uma senha').should('be.visible');\ncy.contains('Repita a senha criada acima').should('be.visible');",
+              "err": {},
+              "uuid": "c4553b02-23ae-4cad-8cad-334904d25db0",
+              "parentUUID": "fb584d7e-273a-4ad0-9466-d049980cee78",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "c4553b02-23ae-4cad-8cad-334904d25db0"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 2744,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.4"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/results",
+        "overwrite": false,
+        "html": true,
+        "json": true,
+        "timestamp": "mmddyyyy_HHMMss"
+      },
+      "version": "6.3.2"
+    }
+  }
+}

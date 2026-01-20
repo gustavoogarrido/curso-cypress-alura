@@ -1,0 +1,106 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2026-01-20T15:36:28.588Z",
+    "end": "2026-01-20T15:36:32.653Z",
+    "duration": 4065,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "adb41bd9-2bbc-4fac-ad88-feff75bd510a",
+      "title": "",
+      "fullFile": "cypress\\e2e\\home.cy.js",
+      "file": "cypress\\e2e\\home.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "8405ecc8-2f35-4e9a-bfb6-126d120cabb0",
+          "title": "Visiting home page",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Should load the home page",
+              "fullTitle": "Visiting home page Should load the home page",
+              "timedOut": null,
+              "duration": 1738,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://adopet-frontend-cypress.vercel.app/');\ncy.get('.button').click();\ncy.get(':nth-child(1) > .card__contact').click();",
+              "err": {},
+              "uuid": "8d95ab46-a0d7-4c7e-95bc-5ae48baa4181",
+              "parentUUID": "8405ecc8-2f35-4e9a-bfb6-126d120cabb0",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "8d95ab46-a0d7-4c7e-95bc-5ae48baa4181"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 1738,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.4"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/results",
+        "overwrite": false,
+        "html": true,
+        "json": true,
+        "timestamp": "mmddyyyy_HHMMss"
+      },
+      "version": "6.3.2"
+    }
+  }
+}

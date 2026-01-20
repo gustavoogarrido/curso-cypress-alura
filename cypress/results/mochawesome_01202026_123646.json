@@ -1,0 +1,125 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 2,
+    "pending": 0,
+    "failures": 0,
+    "start": "2026-01-20T15:36:39.151Z",
+    "end": "2026-01-20T15:36:46.994Z",
+    "duration": 7843,
+    "testsRegistered": 2,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "6f7ce48b-4f9d-440b-a253-9eeacdee597a",
+      "title": "",
+      "fullFile": "cypress\\e2e\\login-failure.cy.js",
+      "file": "cypress\\e2e\\login-failure.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "53a16235-a9f5-4cb4-bf44-2254e2b86e23",
+          "title": "Login function",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Should display two errors",
+              "fullTitle": "Login function Should display two errors",
+              "timedOut": null,
+              "duration": 4131,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "// cy.get('[data-test=\"input-loginEmail\"]').type('gustavo2@exemplo.com');\n// cy.get('[data-test=\"input-loginPassword\"]').type('@Gustavo123');\ncy.get('[data-test=\"submit-button\"]').click();\ncy.contains('É necessário informar um endereço de email').should('be.visible');\ncy.contains('Insira sua senha').should('be.visible');",
+              "err": {},
+              "uuid": "bb8a6af3-7974-45ca-b3bd-68dce89dcfff",
+              "parentUUID": "53a16235-a9f5-4cb4-bf44-2254e2b86e23",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Should display format error in each field",
+              "fullTitle": "Login function Should display format error in each field",
+              "timedOut": null,
+              "duration": 1523,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('[data-test=\"input-loginEmail\"]').type('email');\ncy.get('[data-test=\"input-loginPassword\"]').type('senha');\ncy.get('[data-test=\"submit-button\"]').click();\ncy.contains('Por favor, verifique o email digitado').should('be.visible');\ncy.contains('A senha deve conter pelo menos uma letra maiúscula, um número e ter entre 6 e 15 caracteres').should('be.visible');",
+              "err": {},
+              "uuid": "0103d21f-522d-499d-b6fb-2bad3b9ff87f",
+              "parentUUID": "53a16235-a9f5-4cb4-bf44-2254e2b86e23",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "bb8a6af3-7974-45ca-b3bd-68dce89dcfff",
+            "0103d21f-522d-499d-b6fb-2bad3b9ff87f"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 5654,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.4"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/results",
+        "overwrite": false,
+        "html": true,
+        "json": true,
+        "timestamp": "mmddyyyy_HHMMss"
+      },
+      "version": "6.3.2"
+    }
+  }
+}

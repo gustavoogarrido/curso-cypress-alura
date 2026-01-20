@@ -1,0 +1,184 @@
+{
+  "stats": {
+    "suites": 3,
+    "tests": 3,
+    "passes": 2,
+    "pending": 1,
+    "failures": 0,
+    "start": "2026-01-20T15:45:37.094Z",
+    "end": "2026-01-20T15:45:45.235Z",
+    "duration": 8141,
+    "testsRegistered": 3,
+    "passPercent": 100,
+    "pendingPercent": 33.33333333333333,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "dd992267-31d5-4aad-adb2-3f110e1a364e",
+      "title": "",
+      "fullFile": "cypress\\e2e\\register-success.cy.js",
+      "file": "cypress\\e2e\\register-success.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "be6463ae-020f-4074-84b7-6f4019aa20f8",
+          "title": "Register function",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Should register a new account successfully",
+              "fullTitle": "Register function Should register a new account successfully",
+              "timedOut": null,
+              "duration": 3310,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.register('Gustavo', 'gustavo21@exemplo.com', '@Gustavo123');",
+              "err": {},
+              "uuid": "8863e61f-7613-484f-b371-bf4f52baeffc",
+              "parentUUID": "be6463ae-020f-4074-84b7-6f4019aa20f8",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "8863e61f-7613-484f-b371-bf4f52baeffc"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 3310,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "bbf98ebc-7709-4306-8313-41b34bad0463",
+          "title": "Adoption list function",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Should list pets to adopt",
+              "fullTitle": "Adoption list function Should list pets to adopt",
+              "timedOut": null,
+              "duration": 0,
+              "state": "pending",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": true,
+              "context": null,
+              "code": "cy.visit('https://adopet-frontend-cypress.vercel.app/home');\ncy.contains('a', 'Falar com responsável').click();",
+              "err": {},
+              "uuid": "1cc96f4d-2eb5-43b0-a51a-d7a9611e139f",
+              "parentUUID": "bbf98ebc-7709-4306-8313-41b34bad0463",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [],
+          "pending": [
+            "1cc96f4d-2eb5-43b0-a51a-d7a9611e139f"
+          ],
+          "skipped": [],
+          "duration": 0,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "26db1c58-af14-44d2-838c-cec103eabbcc",
+          "title": "Header buttons",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Should take to home and take to message form",
+              "fullTitle": "Header buttons Should take to home and take to message form",
+              "timedOut": null,
+              "duration": 2508,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "//Login\ncy.visit('https://adopet-frontend-cypress.vercel.app/');\ncy.contains('a', 'Fazer login').click();\ncy.get('input[name=email]').type('gustavo2@exemplo.com');\ncy.get('input[name=password]').type('@Gustavo123');\ncy.contains('button', 'Entrar').click();\n//Header buttons\ncy.get('.header__home').click();\ncy.get('.header__message').click();",
+              "err": {},
+              "uuid": "ccc69eb5-94cf-4aa0-9974-28fc77e434e6",
+              "parentUUID": "26db1c58-af14-44d2-838c-cec103eabbcc",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "ccc69eb5-94cf-4aa0-9974-28fc77e434e6"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 2508,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.4"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/results",
+        "overwrite": false,
+        "html": true,
+        "json": true,
+        "timestamp": "mmddyyyy_HHMMss"
+      },
+      "version": "6.3.2"
+    }
+  }
+}

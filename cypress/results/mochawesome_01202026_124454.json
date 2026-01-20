@@ -1,0 +1,110 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2026-01-20T15:44:45.776Z",
+    "end": "2026-01-20T15:44:54.208Z",
+    "duration": 8432,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "46fc5539-466c-4e1f-bc28-ae5c8a032eae",
+      "title": "",
+      "fullFile": "cypress\\e2e\\home.cy.js",
+      "file": "cypress\\e2e\\home.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "5f2175b9-78f1-496a-8fd8-a3e769a9a69d",
+          "title": "Visiting home page",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Should load the home page",
+              "fullTitle": "Visiting home page Should load the home page",
+              "timedOut": null,
+              "duration": 5992,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://adopet-frontend-cypress.vercel.app/');\ncy.get('.button').click();\ncy.contains('img');\ncy.get(':nth-child(1) > .card__contact').click();",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 4000ms: Expected to find content: 'img' but never did.",
+                "estack": "AssertionError: Timed out retrying after 4000ms: Expected to find content: 'img' but never did.\n    at Context.eval (webpack://curso-cypress-alura/./cypress/e2e/home.cy.js:5:11)",
+                "diff": null
+              },
+              "uuid": "ba8f128e-7eab-4bd1-b36e-99376265ba47",
+              "parentUUID": "5f2175b9-78f1-496a-8fd8-a3e769a9a69d",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "ba8f128e-7eab-4bd1-b36e-99376265ba47"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 5992,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.4"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/results",
+        "overwrite": false,
+        "html": true,
+        "json": true,
+        "timestamp": "mmddyyyy_HHMMss"
+      },
+      "version": "6.3.2"
+    }
+  }
+}
