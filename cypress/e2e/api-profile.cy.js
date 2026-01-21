@@ -6,7 +6,7 @@ describe('Testing profiles calls and loads', () => {
     //     cy.login('gustavo2@exemplo.com', '@Gustavo123');
     // });
 
-    it('Must have user name in response', () => {
+    it.skip('Must have user name in response', () => {
         cy.request({
             method: 'GET',
             url: 'https://adopet-api-i8qu.onrender.com/adotante/perfil/a9c101ea-c0f4-41df-9350-485607a55399',

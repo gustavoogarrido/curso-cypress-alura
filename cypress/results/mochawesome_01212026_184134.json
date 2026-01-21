@@ -1,0 +1,110 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2026-01-21T21:41:34.517Z",
+    "end": "2026-01-21T21:41:34.808Z",
+    "duration": 291,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "f5ebe3e6-eac6-4ea7-8d38-b52dc1ec7782",
+      "title": "",
+      "fullFile": "cypress\\e2e\\api-messages.cy.js",
+      "file": "cypress\\e2e\\api-messages.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "db80190f-6302-4041-9d89-0fe96cd6ac87",
+          "title": "API Adopet",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "API messages",
+              "fullTitle": "API Adopet API messages",
+              "timedOut": null,
+              "duration": 243,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.request({\n  method: 'GET',\n  url: 'https://adopet-api-i8qu.onrender.com/mensagem/a9c101ea-c0f4-41df-9350-485607a55399',\n  headers: Cypress.env('authorization')\n}).then(res => {\n  expect(res.status).to.be.equal(200);\n  expect(res.body).is.not.empty;\n  expect(res.body).to.have.property('msg');\n  expect(res.duration).to.be.lte(time);\n});",
+              "err": {
+                "message": "CypressError: `cy.request()` requires the `headers` option to be an object literal.\n\nhttps://on.cypress.io/request",
+                "estack": "CypressError: `cy.request()` requires the `headers` option to be an object literal.\n\nhttps://on.cypress.io/request\n    at Context.request (http://localhost:57271/__cypress/runner/cypress_runner.js:132906:72)\n    at wrapped (http://localhost:57271/__cypress/runner/cypress_runner.js:138282:43)\nFrom Your Spec Code:\n    at Context.eval (webpack://curso-cypress-alura/./cypress/e2e/api-messages.cy.js:5:11)",
+                "diff": null
+              },
+              "uuid": "ee9dc57a-77a3-4eac-9c97-3e3f33ec54db",
+              "parentUUID": "db80190f-6302-4041-9d89-0fe96cd6ac87",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "ee9dc57a-77a3-4eac-9c97-3e3f33ec54db"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 243,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.4"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/results",
+        "overwrite": false,
+        "html": true,
+        "json": true,
+        "timestamp": "mmddyyyy_HHMMss"
+      },
+      "version": "6.3.2"
+    }
+  }
+}

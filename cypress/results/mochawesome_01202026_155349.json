@@ -1,0 +1,110 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2026-01-20T18:53:47.329Z",
+    "end": "2026-01-20T18:53:49.205Z",
+    "duration": 1876,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "dec7d461-5ac5-428c-98f7-930c3a25c16f",
+      "title": "",
+      "fullFile": "cypress\\e2e\\api-messages.cy.js",
+      "file": "cypress\\e2e\\api-messages.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "9d610cdd-7faa-410d-a2ca-217441abfbb8",
+          "title": "API Adopet",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "API messages",
+              "fullTitle": "API Adopet API messages",
+              "timedOut": null,
+              "duration": 1783,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.request({\n  method: 'GET',\n  url: 'https://adopet-api-i8qu.onrender.com/mensagem/a9c101ea-c0f4-41df-9350-485607a55399',\n  headers: {\n    authorization\n  }\n}).then(res => {\n  expect(res.status).to.be.equal(200);\n  expect(res.body).is.not.empty;\n  expect(res.body).to.have.property('msg');\n  expect(res.duration).to.be.lte(time);\n});",
+              "err": {
+                "message": "AssertionError: expected 1482 to be at most 125.61596444792778",
+                "estack": "AssertionError: expected 1482 to be at most 125.61596444792778\n    at Context.eval (webpack://curso-cypress-alura/./cypress/e2e/api-messages.cy.js:14:39)",
+                "diff": "- 1482\n+ 125.61596444792778\n"
+              },
+              "uuid": "f996fabc-aadf-4413-b377-b8dd45bb4777",
+              "parentUUID": "9d610cdd-7faa-410d-a2ca-217441abfbb8",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "f996fabc-aadf-4413-b377-b8dd45bb4777"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 1783,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.4"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/results",
+        "overwrite": false,
+        "html": true,
+        "json": true,
+        "timestamp": "mmddyyyy_HHMMss"
+      },
+      "version": "6.3.2"
+    }
+  }
+}
